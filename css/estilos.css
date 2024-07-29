@@ -1,0 +1,165 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Noto Serif TC', serif;
+}
+
+/* contenedores ---------------------------- */
+
+header {
+    padding: 50px 0 0 0;
+    text-align: center;
+}
+
+
+
+section {
+    margin: 50px 0;
+}
+
+#bio {
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #DADBD6;
+}
+
+#bio p:first-of-type {
+    color:white;
+    background-color: rgba(0,0,0,0.8);
+   
+}
+
+#bio p:last-of-type {
+    background-color: rgba(0,0,0,0.8);
+    opacity:3;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 15px;
+}
+
+#bio ul {
+    padding-left: 0;
+    list-style-position: inside;
+}
+
+#sale img {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    
+}
+.footer-container {
+    position: relative;
+    min-height: 100vh;  /* Asegura que el contenedor tenga al menos la altura de la pantalla */
+    overflow: hidden;   /* Asegura que el contenido no desborde */
+}
+
+.footer-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/thestrokesRojo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    z-index: -1;  /* Asegura que la imagen de fondo esté detrás del contenido */
+}
+
+footer {
+    position: relative;
+    padding-top: 300px;  /* Ajusta según sea necesario */
+    padding-bottom: 50px;
+    color: white;
+    text-align: center;
+    z-index: 1;  /* Asegura que el contenido esté por encima de la imagen de fondo */
+}
+
+
+nav {
+    background-color:rgb(105, 28, 32);
+}
+
+nav ul {
+    list-style-type: none;
+    font-family: 'DM Serif Display', serif;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+    nav ul li {
+        border-right: 2px solid black;
+    }
+}
+
+nav ul li:last-child {
+    border-right: 0;
+}
+
+nav ul li a.btn:hover {
+    color: white;
+}
+
+nav .btn {
+    font-size: 25px;
+}
+
+@media screen and (min-width: 992px) {
+    #bio{
+    
+    background:rgb(105, 28, 32)  url(../img/principal.jpg) no-repeat right fixed;
+    }
+}
+
+/* fuentes */
+
+h1 {
+    text-transform: uppercase;
+    font-family: 'DM Serif Display', serif;
+    margin-bottom: 15px;
+}
+#bio h1{
+    background-color:  rgba(0,0,0,0.1);
+}
+h2 {
+    font-family: 'DM Serif Display', serif;
+    color:rgb(105, 28, 32);
+}
+
+p {
+    margin-top: 10px;
+}
+
+/* tabla */
+
+.table {
+    color: white;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+/* form */
+
+input[type=email] {
+    padding: 4px;
+    border: 1px solid rgb(105, 28, 32);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
